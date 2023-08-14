@@ -1,0 +1,102 @@
+/* Mobile and tablet */
+@media (max-width:1024px) {
+    .header__nav-btn{
+        display: block;
+    }
+
+    .header__nav-list{
+        display: none;
+    }
+
+    
+    .modal__body{
+        position: relative;
+    }
+
+    
+
+    .player-profile{
+        text-align: center;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .player-profile__info{
+        width: 50%;
+    }
+
+    .player-profile__info-text{
+        width: 97%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        
+    }
+    
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1024px) {
+    .manager__info{
+        width: 33%;
+        
+    }
+    .manager__img{
+        object-fit: contain;
+        width: 110%;
+    }
+
+    .sticky{
+        top: 0;
+        right: 0;
+        margin-right: 95px;
+    }
+
+    
+}
+/* mobile */
+@media (max-width:739px) {
+    .manager__info{
+        width: 38%;
+        
+    }
+    .manager__img{
+        object-fit: contain;
+        width: 110%;
+    }
+
+    .manager__info-profile{
+        margin-top: 20px;
+    }
+
+    .players__position-item{
+        margin-left: 8px;
+        padding: 8px 8px;
+    }
+
+    .players__card-item{
+        width: 50%;
+    }
+
+    .footer__license-list{
+        flex-wrap: wrap;
+    }
+
+    .auth-form-register{
+        width: 93.8%;
+    }
+
+    .auth-form-login{
+        width: 74.8%;
+    }
+
+    .player-profile{
+        width: 84%;
+    }
+    .sticky{
+        top: 0;
+        right: 0;
+        margin-right: 41px;
+    margin-left: 0px;
+    }
+}   

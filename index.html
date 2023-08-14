@@ -1,0 +1,2392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="wrapper">
+        <div class="main grid wide">
+            <div class="header">
+                <div class="header-content">
+                    <div class="header__logo-container">
+                        <a href="" class="header__logo-link">
+                            <img src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg" alt="" class="header__logo-img">
+                            <img src="./assets/img/logo/parche_champions_14.png" alt="" class="header__logo-award-img">
+                        </a>
+
+                    </div>
+                    <!-- Nav pc -->
+                    <nav id="js-header__nav" class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-item-link">MY CLUB</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#players" class="header__nav-item-link">PLAYERS</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#manager" class="header__nav-item-link">MANAGER</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#legend" class="header__nav-item-link">LEGEND</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#stadium" class="header__nav-item-link">STADIUM</a>
+                            </li>
+                        </ul>
+
+                        <!-- Nav mobile -->
+                        <label for="nav-mobile-input" class="header__nav-btn">
+                            <i class="header__nav-btn-icon fa-solid fa-bars"></i>
+                        </label>
+                        <input type="checkbox" name="" hidden class="nav-mobile-input" id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav__overlay"></label>
+
+
+                        <nav class="header__nav-mobile">
+                            <label for="nav-mobile-input" class="header__nav-mobile-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                            <ul class="header__nav-mobile-list">
+                                <li class="header__nav-mobile-item">
+                                    <a href="#" class="header__nav-mobile-item-link">MY CLUB</a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="#players" class="header__nav-mobile-item-link">PLAYERS</a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="#manager" class="header__nav-mobile-item-link">MANAGER</a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="#legend" class="header__nav-mobile-item-link">LEGEND</a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="#stadium" class="header__nav-mobile-item-link">STADIUM</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Nav auth -->
+                        <ul class="header__auth-list">
+                            <li class="header__auth-item">
+                                <a class="header__auth-item-btn js-register">SIGN UP</a>
+                            </li>
+                            <li class="header__auth-item">
+                                <a class="header__auth-item-btn js-login">LOGIN</a>
+                            </li>
+                            <li class="header__auth-item header__auth-language">
+                                <a class="header__auth-item-btn header__auth-language-btn">LANGUAGE <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="header__language-list">
+                                    <li class="header__language-item">Vietnamese</li>
+                                    <li class="header__language-item">English</li>
+                                    <li class="header__language-item">Spanish</li>
+                                    <li class="header__language-item">Chinese</li>
+                                    <li class="header__language-item">France</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    
+                </div>
+            </div>
+
+            <div class="slideshow">
+                <div class="slideshow-container">
+                    <div class="slideshow__slides js-slide">
+                        <img src="./assets/img/slider/slider1.jpg" alt="" class="slideshow__slides-img">
+                    </div>
+    
+                    <div class="slideshow__slides js-slide">
+                        <img src="./assets/img/slider/slider4.jpg" alt="" class="slideshow__slides-img">
+                    </div>
+
+                    <div class="slideshow__slides js-slide">
+                        <img src="./assets/img/slider/slider2.jpg" alt="" class="slideshow__slides-img">
+                    </div>
+
+                    <div class="slideshow__slides js-slide">
+                        <img src="./assets/img/slider/slider5.jpg" alt="" class="slideshow__slides-img">
+                    </div>
+    
+                    <!-- Next and previous buttons -->
+                    <a class="slideshow__prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="slideshow__next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div class="slideshow__dots-list" style="text-align:center">
+                    <span class="slideshow__dot js-dot" onclick="currentSlide(1)"></span>
+                    <span class="slideshow__dot js-dot" onclick="currentSlide(2)"></span>
+                    <span class="slideshow__dot js-dot" onclick="currentSlide(3)"></span>
+                    <span class="slideshow__dot js-dot" onclick="currentSlide(4)"></span>
+                    
+                </div>
+
+            </div>
+            
+
+
+            <div class="content">
+                <div id="players" class="players-container">
+                    <h2 class="players__heading heading">PLAYERS</h2>
+                    <ul class="players__positions-list">
+                        <li class="players__position-item players__position-item-gk active js-gk-btn">Goalkeepers</li>
+                        <li class="players__position-item players__position-item-df js-df-btn">Defenders</li>
+                        <li class="players__position-item players__position-item-mf js-mf-btn">Midfielders</li>
+                        <li class="players__position-item players__position-item-fw js-fw-btn">Forwards</li>
+                    </ul>
+
+                    <!-- Goalkeepers -->
+                    <ul class="players__cards-list players__cards-list-goalkeepers open js-gk-list">
+                        <li class="players__card-item js-courtois-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">COURTOIS</span> <br>
+                                <span class="players__card-position">GOALKEEPER</span> <br>
+                                <span class="players__card-number">1</span>
+                            </div>
+                            <img src="./assets/img/players/goalkeppers/COURTOIS.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-lunin-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">LUNIN</span> <br>
+                                <span class="players__card-position">GOALKEEPER</span><br>
+                                <span class="players__card-number">13</span>
+                            </div>
+                            <img src="./assets/img/players/goalkeppers/LUNIN.png" alt="" class="players__card-img">
+                        </li>
+                    </ul>
+
+                    <!-- Defenders -->
+                    <ul class="players__cards-list players__cards-list-defenders js-df-list">
+                        <li class="players__card-item js-carvajal-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">CARVAJAL</span> <br>
+                                <span class="players__card-position">DEFENDERS</span> <br>
+                                <span class="players__card-number">2</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/CARVAJAL.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-militao-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">E. Militão</span> <br>
+                                <span class="players__card-position">DEFENDERS</span><br>
+                                <span class="players__card-number">3</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/MILITAO.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-alaba-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">ALABA</span> <br>
+                                <span class="players__card-position">DEFENDERS</span><br>
+                                <span class="players__card-number">4</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/ALABA.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-nacho-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">NACHO</span> <br>
+                                <span class="players__card-position">DEFENDERS</span><br>
+                                <span class="players__card-number">6</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/NACHO.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-odriozola-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">ODRIOZOLA</span> <br>
+                                <span class="players__card-position">DEFENDERS</span> <br>
+                                <span class="players__card-number">16</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/ODRIOZOLA.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-lucas-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">LUCAS V.</span> <br>
+                                <span class="players__card-position">DEFENDERS</span><br>
+                                <span class="players__card-number">17</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/LUCAS.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-garcia-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">Fran García</span> <br>
+                                <span class="players__card-position">DEFENDERS</span><br>
+                                <span class="players__card-number">20</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/FRAN_GARCIA.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-rudiger-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">Rüdiger </span> <br>
+                                <span class="players__card-position">DEFENDERS</span><br>
+                                <span class="players__card-number">22</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/RUDIGER.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-mendy-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">F.MENDY </span> <br>
+                                <span class="players__card-position">DEFENDERS</span><br>
+                                <span class="players__card-number">23</span>
+                            </div>
+                            <img src="./assets/img/players/defenders/MENDY.png" alt="" class="players__card-img">
+                        </li>
+                    </ul>
+                    <!-- Midfielders -->
+                    <ul class="players__cards-list players__cards-list-midfielders js-mf-list">
+                        <li class="players__card-item js-bellingham-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">BELLINGHAM</span> <br>
+                                <span class="players__card-position">MIDFIELDERS</span> <br>
+                                <span class="players__card-number">5</span>
+                            </div>
+                            <img src="./assets/img/players/midfielders/BELLINGHAM.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-kroos-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">KROOS</span> <br>
+                                <span class="players__card-position">MIDFIELDERS</span><br>
+                                <span class="players__card-number">8</span>
+                            </div>
+                            <img src="./assets/img/players/midfielders/KROOS.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-modric-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">Modrić</span> <br>
+                                <span class="players__card-position">MIDFIELDERS</span><br>
+                                <span class="players__card-number">10</span>
+                            </div>
+                            <img src="./assets/img/players/midfielders/MODRIC.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-camavinga-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">CAMAVINGA</span> <br>
+                                <span class="players__card-position">MIDFIELDERS</span><br>
+                                <span class="players__card-number">12</span>
+                            </div>
+                            <img src="./assets/img/players/midfielders/CAMAVINGA.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-valvarde-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">VALVERDE</span> <br>
+                                <span class="players__card-position">MIDFIELDERS</span><br>
+                                <span class="players__card-number">15</span>
+                            </div>
+                            <img src="./assets/img/players/midfielders/VALVERDE.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-tchouameni-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">Tchouaméni</span> <br>
+                                <span class="players__card-position">MIDFIELDERS</span><br>
+                                <span class="players__card-number">18</span>
+                            </div>
+                            <img src="./assets/img/players/midfielders/TCHOUAMENI.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-ceballos-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">D.CEBALLOS </span> <br>
+                                <span class="players__card-position">MIDFIELDERS</span><br>
+                                <span class="players__card-number">22</span>
+                            </div>
+                            <img src="./assets/img/players/midfielders/CEBALLOS.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-arda-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">Arda Güler</span> <br>
+                                <span class="players__card-position">MIDFIELDERS</span><br>
+                                <span class="players__card-number">23</span>
+                            </div>
+                            <img src="./assets/img/players/midfielders/ARDA.png" alt="" class="players__card-img">
+                        </li>
+                    </ul>
+
+                    <!-- Forwards -->
+                    <ul class="players__cards-list players__cards-list-forwards js-fw-list">
+                        <li class="players__card-item js-vinicius-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">VINI JR.</span> <br>
+                                <span class="players__card-position">FORWARDS</span> <br>
+                                <span class="players__card-number">7</span>
+                            </div>
+                            <img src="./assets/img/players/forwards/VINICIUS.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-rodrygo-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">RODRYGO</span> <br>
+                                <span class="players__card-position">FORWARDS</span><br>
+                                <span class="players__card-number">11</span>
+                            </div>
+                            <img src="./assets/img/players/forwards/RODRYGO.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-joselu-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">JOSELU</span> <br>
+                                <span class="players__card-position">FORWARDS</span><br>
+                                <span class="players__card-number">14</span>
+                            </div>
+                            <img src="./assets/img/players/forwards/JOSELU.png" alt="" class="players__card-img">
+                        </li>
+                        <li class="players__card-item js-brahim-modal-btn">
+                            <div class="players__card-item-info">
+                                <span class="players__card-name">BRAHIM</span> <br>
+                                <span class="players__card-position">FORWARDS</span><br>
+                                <span class="players__card-number">21</span>
+                            </div>
+                            <img src="./assets/img/players/forwards/BRAHIM.png" alt="" class="players__card-img">
+                    </ul>
+                    
+                </div>
+
+                <div id="manager" class="manager-container">
+                    <h2 class="manager__heading heading">MANAGER</h2>
+                    <div class="manager__info">
+                        <span class="manager__info-name">CARLO ANCELOTTI</span>
+                        <p class="manager__info-profile"> Nicknamed "Don Carlo" an Italian professional football manager and former player who is the manager of Real Madrid. Ancelotti is the most decorated manager in UEFA Champions League history, having won the trophy a record four times as coach (twice with AC Milan and twice with Real Madrid). He is also the first and only one to have managed teams in five Champions League finals.</p>
+                    </div>
+                    <img src="./assets/img/manager/ANCELOTTI.png" alt="" class="manager__img">
+                </div>
+
+                <div id="legend" class="legend-container">
+                    <h2 class="legend__heading heading">LEGEND</h2>
+                    <ul class="legend__list">
+                        <li class="legend__item js-cristiano-ronaldo-modal-btn">
+                            <h4 class="legend__item-name">CRISTIANO RONALDO</h4>
+                              <img src="./assets/img/legend/CRISTIANO_RONALDO.png" alt="" class="legend__item-img">
+                        </li>
+                        
+                        <li class="legend__item  js-ronaldo-modal-btn">
+                            <h4 class="legend__item-name">RONALDO</h4>
+                            <img src="./assets/img/legend/RONALDO.png" alt="" class="legend__item-img legend__item-ronaldo">
+                        </li>
+                            
+                        <li class="legend__item js-beckham-modal-btn">
+                            <h4 class="legend__item-name">DAVID BECKHAM</h4>
+                            <img src="./assets/img/legend/BECKHAM.png" alt="" class="legend__item-img legend__item-beckham">
+                        </li>
+                        
+                        <li class="legend__item js-zidane-modal-btn">
+                            <h4 class="legend__item-name">Zinédine Zidane</h4>
+                            <img src="./assets/img/legend/ZIDANE.png" alt="" class="legend__item-img legend__item-zidane">
+                        </li>                       
+                        
+                        <li class="legend__item js-carlos-modal-btn">
+                            <h4 class="legend__item-name">ROBERTO CARLOS</h4>
+                            <img src="./assets/img/legend/CARLOS.png" alt="" class="legend__item-img legend__item-carlos">
+                        </li>
+
+                        <li class="legend__item js-nistelrooy-modal-btn">
+                            <h4 class="legend__item-name">RUUD VAN NISTELROOY</h4>
+                            <img src="./assets/img/legend/NISTELROOY.png" alt="" class="legend__item-img legend__item-nistelrooy">
+                        </li>
+
+                        <li class="legend__item js-kaka-modal-btn">
+                            <h4 class="legend__item-name">KAKÁ</h4>
+                            <img src="./assets/img/legend/KAKA.png" alt="" class="legend__item-img legend__item-kaka">
+                        </li>
+
+                        <li class="legend__item js-casillas-modal-btn">
+                            <h4 class="legend__item-name">IKER CASILLAS</h4>
+                            <img src="./assets/img/legend/CASILLAS.png" alt="" class="legend__item-img legend__item-casillas">
+                        </li>
+                                               
+                    </ul>
+                </div>
+
+                <div id="stadium" class="stadium-container">
+                    <h2 class="stadium__heading heading">STADIUM</h2>
+                    <h2 class="stadium__name">Santiago Bernabéu</h2>
+                    <img src="./assets/img/stadium/stadium.jpg" alt="" class="stadium__img">
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="row">
+                    <div class="footer__social">
+                        <h2 class="footer__social-heading">FOLLOW US</h2>
+                        <ul class="footer__social-list-app">
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item-link"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item-link"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item-link"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item-link"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item-link"><i class="fa-brands fa-snapchat"></i></a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item-link"><i class="fa-brands fa-twitch"></i></a>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="" class="footer__social-item-link"><i class="fa-brands fa-github"></i></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="footer__license">
+                        <ul class="footer__license-list">
+                            <li class="footer__license-item">
+                                <a href="" class="footer__license-item-link">Legal Notice</a>
+                            </li>
+                            <li class="footer__license-item">
+                                <a href="" class="footer__license-item-link">Privacy Policy</a>
+                            </li>
+                            <li class="footer__license-item">
+                                <a href="" class="footer__license-item-link">Cookies Policy</a>
+                            </li>
+                            <li class="footer__license-item">
+                                <a href="" class="footer__license-item-link">
+                                    Notification management</a>
+                            </li>
+                            <li class="footer__license-item">
+                                <a href="" class="footer__license-item-link">
+                                    Patrocinadores</a>
+                            </li>
+                            <li class="footer__license-item">
+                                <a href="" class="footer__license-item-link">
+                                    Mapa Web</a>
+                            </li>
+                            <li class="footer__license-item">
+                                <a href="" class="footer__license-item-link">Canal de información</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <p class="footer__license-final">Real Madrid © 2023 Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Auth modal layout -->
+        <div class="modal js-modal">
+            <div class="modal__overlay"></div>
+
+            <div class="modal__body js-modal-body">
+                <!-- Register form -->
+                <div class="auth-form auth-form-register js-register-modal">
+                    <div class="auth-form__header">
+                        <div class="auth-form__header-logo">
+                            <img src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg" alt="" class="auth-form__header-logo-img">
+                        </div>
+
+                        <label for="" class="auth-form__header-action js-login-in-register">Login</label>
+                        <label for="" class="auth-form__header-action auth-form__header-action--active">Sign Up</label>
+                        <label for="" class="auth-form__header-close js-close-in-register"><i class="auth-form__header-close-icon fa-solid fa-xmark"></i></label>
+                    </div>
+
+                    <div class="auth-form__content">
+                        <div class="auth-form__form">
+                            <h4 class="auth-form__form-heading">Register via mobile</h4>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Enter mobile number">
+                            </div>
+    
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Enter password">
+                            </div>
+    
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Enter password again">
+                            </div>
+
+                            <p class="auth-form__input-require">Password should be the combination of 6-20 characters and numbers</p>
+
+                            <button class="auth-form__register-btn">Sign Up</button>
+                        </div>
+
+                        <div class="auth-form__social">
+                            <h4 class="auth-form__social-heading">Log in via third-party apps</h4>
+
+                            <div class="auth-form__social-item">
+                                <a href="" class="auth-form__social-item-link">
+                                    <i class="auth-form__social-item-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </div>
+                            <div class="auth-form__social-item">
+                                <a href="" class="auth-form__social-item-link">
+                                    <i class="auth-form__social-item-icon fa-brands fa-google"></i>
+                                    Google
+                                </a>
+                            </div>
+                            <div class="auth-form__social-item">
+                                <a href="" class="auth-form__social-item-link">
+                                    <i class="auth-form__social-item-icon fa-brands fa-apple"></i>
+                                    Apple
+                                </a>
+                            </div>
+
+                            <p class="auth-form__social-policy">
+                                Sign up means you agree the <a href="">Terms</a> and <a href="">Privacy Policy</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login form -->
+                <div class="auth-form auth-form-login js-login-modal">
+                    <div class="auth-form__header">
+                        <div class="auth-form__header-logo">
+                            <img src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg" alt="" class="auth-form__header-logo-img">
+                        </div>
+
+                        <label for="" class="auth-form__header-action auth-form__header-action--active">Login</label>
+                        <label for="" class="auth-form__header-action auth-form__header-action js-register-in-login">Sign Up</label>
+                        <label for="" class="auth-form__header-close js-close-in-login"><i class="auth-form__header-close-icon fa-solid fa-xmark"></i></label>
+                    </div>
+
+                    <div class="auth-form__content">
+                        <div class="auth-form__form auth-form__form-login">
+                            <h4 class="auth-form__form-heading">Login via mobile</h4>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Enter mobile number">
+                            </div>
+    
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Enter password">
+                            </div>
+    
+                           
+                            
+                            <a href="" class="auth-form__form-forgot">Forgot password</a>
+
+                            <button class="auth-form__register-btn auth-form__login-btn">Login</button>
+                        </div>
+
+                        <div class="auth-form__social">
+                            <h4 class="auth-form__social-heading">Log in via third-party apps</h4>
+
+                            <div class="auth-form__social-item">
+                                <a href="" class="auth-form__social-item-link">
+                                    <i class="auth-form__social-item-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </div>
+                            <div class="auth-form__social-item">
+                                <a href="" class="auth-form__social-item-link">
+                                    <i class="auth-form__social-item-icon fa-brands fa-google"></i>
+                                    Google
+                                </a>
+                            </div>
+                            <div class="auth-form__social-item">
+                                <a href="" class="auth-form__social-item-link">
+                                    <i class="auth-form__social-item-icon fa-brands fa-apple"></i>
+                                    Apple
+                                </a>
+                            </div>
+
+                            <p class="auth-form__social-policy">
+                                Sign up means you agree the <a href="">Terms</a> and <a href="">Privacy Policy</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        <!-- Player Modal layout -->
+
+        <!-- Courtois -->
+        <div class="modal js-modal-courtois">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-courtois">
+                <div class="player-profile player-profile-courtois js-courtois-profile">
+                    <h2 class="player-profile__heading heading">THIBAUT COURTOIS</h2>
+                    <label for="" class="player-profile-close js-courtois-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/goalkeppers/COURTOIS.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/BELGIUM.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">BELGIUM</span>
+                            </div>
+                            <p class="player-profile__info-text">Thibaut Nicolas Marc Courtois (born 11 May 1992) is a Belgian professional footballer who plays as a goalkeeper for La Liga club Real Madrid and the Belgium national team. Regarded as one of the best goalkeepers in the world, he is known for his reflexes, acrobatic saves, and command of the penalty area.[4][5][6]
+
+                                Courtois began his career with Genk and made his senior debut in 2009, at age 16; he went on to establish himself as the club's becoming La Liga's most expensive goalkeeper, and where </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lunin -->
+        <div class="modal js-modal-lunin">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-lunin">
+                <div class="player-profile player-profile-lunin js-lunin-profile">
+                    <h2 class="player-profile__heading heading">ANDRIY LUNIN</h2>
+                    <label for="" class="player-profile-close js-lunin-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/goalkeppers/LUNIN.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/UKRAINE.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">UKRAINE</span>
+                            </div>
+                            <p class="player-profile__info-text">Andriy Oleksiyovych Lunin (Ukrainian: Андрій Олексійович Лунін; born 11 February 1999) is a Ukrainian professional footballer who plays as a goalkeeper for La Liga club Real Madrid and the Ukraine national team. On 19 June 2018, Real Madrid reached an agreement with Zorya Luhansk to sign Lunin in a reportedly €8.5 million plus 5 million add-ons deal. The deal concluded four days later, and he became the first Ukrainian to play for the club. On 27 August 2018, he was loaned to nearby fellow La Liga team CD Leganés, for the season. Halfway through the campaign, he stated that he was content with being second choice to Iván Cuéllar, and would complete his contract.
+
+                                On 13 August 2019, he was loaned to Real Valladolid for the 2019–20 season. On 15 October 2019, Lunin was included in the 20 best under-21 players shortlist for the 2019 Golden Boy award.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carvajal -->
+        <div class="modal js-modal-carvajal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-carvajal">
+                <div class="player-profile player-profile-carvajal js-carvajal-profile">
+                    <h2 class="player-profile__heading heading">DANI CARVAJAL</h2>
+                    <label for="" class="player-profile-close js-carvajal-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/CARVAJAL.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/SPAIN.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">SPAIN</span>
+                            </div>
+                            <p class="player-profile__info-text">Daniel "Dani" Carvajal Ramos (Spanish pronunciation: [daˈnjel kaɾβaˈxal ˈramos]; born 11 January 1992) is a Spanish professional footballer who plays as a right back for La Liga club Real Madrid and the Spain national team.
+
+                                Having risen through the Real Madrid youth ranks, he spent a season with Bayer Leverkusen before returning to Real Madrid. He broke into the first team in 2013, and has subsequently gone on to win 20 major trophies at Real Madrid including five Champions League trophies, three La Liga titles and a Copa del Rey.
+                                
+                                At youth international level, Carvajal won the 2011 European Championship with the under-19 team and the 2013 edition with the under-21 side. He made his senior debut in 2014, representing the nation at the 2018 and 2022 FIFA World Cup. At the 2023 UEFA Nations League Finals, he scored the winning penalty which led Spain to their first UEFA Nations League title.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Militao -->
+        <div class="modal js-modal-militao">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-militao">
+                <div class="player-profile player-profile-militao js-militao-profile">
+                    <h2 class="player-profile__heading heading">E. Militão</h2>
+                    <label for="" class="player-profile-close js-militao-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/MILITAO.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/BRAZIL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">BRAZIL</span>
+                            </div>
+                            <p class="player-profile__info-text">Éder Gabriel Militão (Brazilian Portuguese: [ˈɛdɛʁ ɡabɾiˈɛw miliˈtɐ̃w]; born 18 January 1998) is a Brazilian professional footballer who plays for the La Liga club Real Madrid and the Brazil national team. Considered one of the best defenders in the world, he is known for his tackling, marking and aerial abilities.[3][4] Mainly a centre-back, he can also play as a right-back or defensive-midfielder.[5]
+
+                                Militão began his career at São Paulo, playing 57 matches over a span of two years before transferring to Porto. In 2019, after one season in Portugal, he joined Real Madrid for a reported transfer fee of €50 million. He won two La Liga titles, the Champions League in 2022 and the FIFA Club World Cup in 2022.
+                                
+                                Militão made his senior international debut for Brazil in 2018. He was part of their squads that won the Copa América in 2019 and came runners-up in 2021, also playing at the 2022 FIFA World Cup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alaba -->
+        <div class="modal js-modal-alaba">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-alaba">
+                <div class="player-profile player-profile-alaba js-alaba-profile">
+                    <h2 class="player-profile__heading heading">ALABA</h2>
+                    <label for="" class="player-profile-close js-alaba-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/ALABA.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/AUSTRIA.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">AUSTRIA</span>
+                            </div>
+                            <p class="player-profile__info-text">David Olatukunbo Alaba (German pronunciation: [ˈdeɪvɪd ˈalaba];[5] born 24 June 1992) is an Austrian professional footballer who plays as a centre-back or left-back for La Liga club Real Madrid and captains the Austria national team. Considered one of the best defenders in the world, he is renowned for his versatility, technical skills and ability to contribute effectively in both defensive and offensive roles on the field.[6][7]
+
+                               
+                                
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nacho -->
+        <div class="modal js-modal-nacho">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-nacho">
+                <div class="player-profile player-profile-nacho js-nacho-profile">
+                    <h2 class="player-profile__heading heading">NACHO</h2>
+                    <label for="" class="player-profile-close js-nacho-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/NACHO.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/SPAIN.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">SPAIN</span>
+                            </div>
+                            <p class="player-profile__info-text">José Ignacio Fernández Iglesias (Spanish pronunciation: [xoˈsejɣˈnaθjo feɾˈnandeθ iˈɣlesjas]; born 18 January 1990), known as Nacho (Spanish pronunciation: [ˈnatʃo]), is a Spanish professional footballer who plays as a defender for La Liga club Real Madrid, which he captains, and the Spain national team.
+
+                                He has spent his entire career with Real Madrid after making his debut with the first team in 2011, making over 300 appearances and winning several trophies, including five Champions Leagues.
+                                
+                                Nacho won his first senior cap for Spain in 2013, and was on the squad at the 2018 FIFA World Cup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Odriozola -->
+        <div class="modal js-modal-odriozola">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-odriozola">
+                <div class="player-profile player-profile-odriozola js-odriozola-profile">
+                    <h2 class="player-profile__heading heading">Álvaro ODRIOZOLA</h2>
+                    <label for="" class="player-profile-close js-odriozola-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/ODRIOZOLA.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/SPAIN.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">SPAIN</span>
+                                </div>
+                                <p class="player-profile__info-text">Álvaro Odriozola Arzalluz (Spanish pronunciation: [ˈalβaɾo oðɾjoˈθola]; born 14 December 1995) is a Spanish professional footballer who plays as a right-back for La Liga club Real Madrid and the Spain national team. Mainly a full-back, he can also play as a winger.[3]Born in San Sebastián, Basque Country, Odriozola joined Real Sociedad's youth setup in 2006, at the age of ten.[4] On 1 September 2013 he made his senior debut with the reserves, starting in a 3–0 Segunda División B away loss against UD Las Palmas Atlético,[5] and in the same month made the first of several appearances in the UEFA Youth League.[6][7]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lucas -->
+        <div class="modal js-modal-lucas">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-lucas">
+                <div class="player-profile player-profile-lucas js-lucas-profile">
+                    <h2 class="player-profile__heading heading">Lucas Vázquez</h2>
+                    <label for="" class="player-profile-close js-lucas-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/LUCAS.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/SPAIN.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">SPAIN</span>
+                            </div>
+                            <p class="player-profile__info-text">Lucas Vázquez Iglesias (born 1 July 1991) is a Spanish professional footballer who plays as a right-back or winger for La Liga club Real Madrid.
+
+                                Starting his career at Real Madrid, Vázquez made his first-team debut in 2015 after a season on loan at Espanyol. He made his La Liga debut with the latter. Since returning to Real Madrid in 2015 he has appeared in more than 200 matches for the club and has won 16 major trophies including four Champions Leagues and three La Liga titles.
+                                
+                                Vázquez represented Spain at Euro 2016 and the 2018 World Cup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Garcia -->
+        <div class="modal js-modal-garcia">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-garcia">
+                <div class="player-profile player-profile-garcia js-garcia-profile">
+                    <h2 class="player-profile__heading heading">Eric garcia</h2>
+                    <label for="" class="player-profile-close js-garcia-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/FRAN_GARCIA.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/SPAIN.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">SPAIN</span>
+                            </div>
+                            <p class="player-profile__info-text">Eric García Martret (born 9 January 2001) is a Spanish professional footballer who plays as a centre-back for La Liga club Barcelona and the Spain national team.
+
+                                García moved from Barcelona at the age of 17 to Manchester City. He made his Premier League debut on 21 September 2019. In his final season at the club, he won the league and was runner-up in the UEFA Champions League. In June 2021, Garcia rejoined Barcelona on a free transfer, following the expiration of his contract.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rudiger -->
+        <div class="modal js-modal-rudiger">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-rudiger">
+                <div class="player-profile player-profile-rudiger js-rudiger-profile">
+                    <h2 class="player-profile__heading heading">Antonio Rüdiger</h2>
+                    <label for="" class="player-profile-close js-rudiger-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/RUDIGER.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/GERMANY.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">GERMANY</span>
+                            </div>
+                            <p class="player-profile__info-text">Antonio Rüdiger (born 3 March 1993) is a German professional footballer who plays as a centre-back for La Liga club Real Madrid and the Germany national team. Considered one of the best defenders in the world, he is known for his aggressive playing style, tackling ability and strong aerial presence.[4][5][6]
+
+                                Rüdiger began his career at VfB Stuttgart, representing their reserves in 3. Liga and the first team in the Bundesliga. In 2015 he joined Roma, initially on loan and a year later for a €9 million fee. He was signed by Chelsea in 2017 for an estimated £27 million, where he won the FA Cup in his first season, followed by the UEFA Europa League in his second season, and the UEFA Champions League in 2021. In 2022, Rüdiger signed for European champions Real Madrid.
+                                
+                                He made his international debut for Germany in May 2014. He was forced to miss UEFA Euro 2016 due to an injury suffered earlier in the season but he was part of the squad that won the 2017 FIFA Confederations Cup. He kept his spot in the squad for the 2018 World Cup, and later also took part at UEFA Euro 2020 and the 2022 World Cup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mendy -->
+        <div class="modal js-modal-mendy">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-mendy">
+                <div class="player-profile player-profile-mendy js-mendy-profile">
+                    <h2 class="player-profile__heading heading">MENDY</h2>
+                    <label for="" class="player-profile-close js-mendy-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/defenders/MENDY.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/FRANCE.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">FRANCE</span>
+                            </div>
+                            <p class="player-profile__info-text">Ferland Sinna Mendy (born 8 June 1995) is a French professional footballer who plays as a left-back for La Liga club Real Madrid and the France national team. Born in Meulan-en-Yvelines, France,[2] Mendy is of Senegalese descent.[4] At the age of 15 he spent time in a wheelchair and was told he might never play football again.[5]
+
+                                He is a cousin of goalkeeper Édouard Mendy, who plays for Saudi Professional League club Al-Ahli and the Senegal national team.[6]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bellingham -->
+        <div class="modal js-modal-bellingham">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-bellingham">
+                <div class="player-profile player-profile-bellingham js-bellingham-profile">
+                    <h2 class="player-profile__heading heading">JUDE BELLINGHAM</h2>
+                    <label for="" class="player-profile-close js-bellingham-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/midfielders/BELLINGHAM.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/ENGLAND.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">ENGLAND</span>
+                            </div>
+                            <p class="player-profile__info-text">Jude Victor William Bellingham (born 29 June 2003) is an English professional footballer who plays as a midfielder for La Liga club Real Madrid and the England national team.
+
+                                Bellingham joined Birmingham City as an under-8, became the club's youngest ever first-team player when he made his senior debut in August 2019, at the age of 16 years, 38 days,[4] and played regularly during the 2019–20 season. He joined Borussia Dortmund in July 2020, and in his first competitive match became their youngest ever goalscorer. Over three seasons with the club he made 132 appearances, was a member of their 2020–21 DFB-Pokal-winning team, and helped them finish as runners-up in the 2022–23 Bundesliga. He signed for Real Madrid in June 2023.
+                                
+                                He represented England at under-15, under-16, under-17 and under-21 levels. He made his first appearance for the senior team in November 2020, and represented the country at UEFA Euro 2020 and the 2022 FIFA World Cup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kroos -->
+        <div class="modal js-modal-kroos">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-kroos">
+                <div class="player-profile player-profile-kroos js-kroos-profile">
+                    <h2 class="player-profile__heading heading">TONI KROOS</h2>
+                    <label for="" class="player-profile-close js-kroos-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/midfielders/kroos.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/GERMANY.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">GERMANY</span>
+                            </div>
+                            <p class="player-profile__info-text">Toni Kroos (born 4 January 1990) is a German professional footballer who plays as a midfielder for La Liga club Real Madrid. Widely regarded as one of the greatest midfielders of all time,[4][5][6][7] Kroos plays mainly as a central midfielder, but has also been deployed as a deep-lying playmaker in his career. He is known for his vision, passing, creativity, crossing and set-piece ability.[8][9][10]
+
+                                Kroos began his senior club career playing for Bayern Munich, where he made his debut at age 17 in 2007. He was sparingly used, and opted for an 18-month loan spell at fellow Bundesliga side Bayer Leverkusen, where he became a key contributor, and returned to his parent club with an increased profile in 2010. With Bayern, Kroos won two consecutive league titles (three titles in total), a UEFA Champions League title, two DFB-Pokal titles, and was voted into the league team of the season three times. In 2014, he joined Real Madrid in a transfer worth €25 million.[11]
+                                
+                                In Madrid, Kroos won sixteen trophies, including three La Liga titles and four UEFA Champions League titles, three of which he won consecutively from 2016 to 2018, each time being selected in the competition's team of the season. He has been selected in the FIFPro World11 and UEFA Team of the Year three times, and the league's team of the season twice.[12][13] He was voted the IFFHS World's Best Playmaker in 2014 and German Footballer of the Year in 2018.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modric -->
+        <div class="modal js-modal-modric">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-modric">
+                <div class="player-profile player-profile-modric js-modric-profile">
+                    <h2 class="player-profile__heading heading">Luka Modrić</h2>
+                    <label for="" class="player-profile-close js-modric-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/midfielders/MODRIC.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/CROATIA.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">CROATIA</span>
+                            </div>
+                            <p class="player-profile__info-text">Luka Modrić (Croatian pronunciation: [lûːka mǒːdritɕ];[4][5] born 9 September 1985) is a Croatian professional footballer who plays as a midfielder for La Liga club Real Madrid and captains the Croatia national team. He plays mainly as a central midfielder, but can also play as an attacking midfielder or as a defensive midfielder. He is widely regarded as one of the greatest midfielders of all time,[6] and as the greatest Croatian footballer ever.[7]
+
+                                Modrić began his professional career with Croatian club Dinamo Zagreb in 2003 before spells on loan to Bosnian side Zrinjski Mostar and Croatian side Inter Zaprešić. He made his debut for Dinamo in 2005 and his performances earned him a move to Premier League club Tottenham Hotspur in 2008, where he led them to UEFA Champions League qualification in 2010, their first in almost 50 years. In the summer of 2012, Modrić joined Real Madrid for a £30 million transfer fee. In his second season, he won the 2013-14 Champions League title, being selected for that season's squad of the season. After Zinedine Zidane took over Madrid in 2016, Modrić was a key member of the club's three consecutive Champions League titles from 2015–16 to 2017–18, each time being voted into the squad of the season. In total, he has won 23 major trophies at Madrid, including five UEFA Champions League titles, three La Liga titles, and two Copa del Rey titles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Camavinga -->
+        <div class="modal js-modal-camavinga">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-camavinga">
+                <div class="player-profile player-profile-camavinga js-camavinga-profile">
+                    <h2 class="player-profile__heading heading">Eduardo  CAMAVINGA</h2>
+                    <label for="" class="player-profile-close js-camavinga-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/midfielders/CAMAVINGA.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/ANGOLA.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">ANGOLA</span>
+                            </div>
+                            <p class="player-profile__info-text">Eduardo Celmi Camavinga (born 10 November 2002) is a professional footballer who plays as a midfielder for La Liga club Real Madrid. Born in Angola, he represents the France national team. He plays mainly as a central midfielder but he can also be deployed as a left-back[4][5] and a defensive midfielder.[6]Camavinga was born in a refugee camp in Cabinda, Angola in 2002, to an Angolan-Congolese father and a Congolese mother who have fled the civil war in the DR Congo.[7][8][9] He has five siblings. His family moved to France when he was two.[10] They eventually settled in Fougères, where he grew up. He practiced judo for a time before giving it up to focus solely on football. In 2013, the Camavingas' house was burnt down, destroying most of the family's property. Camavinga stated that this was a source of motivation that pushed him to pursue a career in football and help his family.[11]
+
+                                On 7 July 2020, he obtained the Baccalauréat ES (Economic and Social) without mention.[12][13]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Valverde -->
+        <div class="modal js-modal-valverde">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-valverde">
+                <div class="player-profile player-profile-valverde js-valverde-profile">
+                    <h2 class="player-profile__heading heading">Federico Valverde</h2>
+                    <label for="" class="player-profile-close js-valverde-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/midfielders/VALVERDE.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/URUGUAY.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">URUGUAY</span>
+                            </div>
+                            <p class="player-profile__info-text">Federico Santiago Valverde Dipetta (Spanish pronunciation: [feðeˈɾiko βalˈβeɾðe];[note 1] born 22 July 1998) is a Uruguayan professional footballer who plays as a central midfielder for La Liga club Real Madrid and the Uruguay national team. A versatile player known for his pace, stamina, work rate, and shooting ability, he can also be deployed as a defensive midfielder, a right winger, and occasionally a right-back.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tchouameni -->
+        <div class="modal js-modal-tchouameni">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-tchouameni">
+                <div class="player-profile player-profile-tchouameni js-tchouameni-profile">
+                    <h2 class="player-profile__heading heading">Aurélien Tchouaméni</h2>
+                    <label for="" class="player-profile-close js-tchouameni-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/midfielders/TCHOUAMENI.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/FRANCE.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">FRANCE</span>
+                            </div>
+                            <p class="player-profile__info-text">Aurélien Djani Tchouaméni (born 27 January 2000) is a French professional footballer who plays as a defensive midfielder for La Liga club Real Madrid and the France national team.. Tchouaméni was born in Rouen, Normandy,[4] but grew up in Bordeaux, Gironde.[5] He is of Cameroonian descent.[6]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ceballos -->
+        <div class="modal js-modal-ceballos">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-ceballos">
+                <div class="player-profile player-profile-ceballos js-ceballos-profile">
+                    <h2 class="player-profile__heading heading">Dani Ceballos</h2>
+                    <label for="" class="player-profile-close js-ceballos-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/midfielders/CEBALLOS.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/SPAIN.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">SPAIN</span>
+                            </div>
+                            <p class="player-profile__info-text">Daniel Ceballos Fernández (born 7 August 1996) is a Spanish professional footballer who plays as a central or attacking midfielder for La Liga club Real Madrid and the Spain national team.
+
+                                Ceballos started his career at Spanish club Real Betis where he helped them win the Segunda División. He was signed by Real Madrid in 2017, and two years later signed for English Premier League club Arsenal on loan.
+                                
+                                Ceballos won his first cap for Spain in September 2018, in 6–0 home win over Croatia in the UEFA Nations League.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arda -->
+        <div class="modal js-modal-arda">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-arda">
+                <div class="player-profile player-profile-arda js-arda-profile">
+                    <h2 class="player-profile__heading heading">ARDA</h2>
+                    <label for="" class="player-profile-close js-arda-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/midfielders/arda.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/TURKEY.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">TURKEY</span>
+                            </div>
+                            <p class="player-profile__info-text">Arda Güler (Turkish pronunciation: [aɾˈda ˈɟylæɾ] (listen); born 25 February 2005) is a Turkish professional footballer who plays as a midfielder for La Liga club Real Madrid and the Turkey national team.Arda Güler (Turkish pronunciation: [aɾˈda ˈɟylæɾ] (listen); born 25 February 2005) is a Turkish professional footballer who plays as a midfielder for La Liga club Real Madrid and the Turkey national team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vinicius -->
+        <div class="modal js-modal-vinicius">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-vinicius">
+                <div class="player-profile player-profile-vinicius js-vinicius-profile">
+                    <h2 class="player-profile__heading heading">Vinícius Júnior</h2>
+                    <label for="" class="player-profile-close js-vinicius-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/forwards/VINICIUS.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/BRAZIL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">BRAZIL</span>
+                            </div>
+                            <p class="player-profile__info-text">Vinícius José Paixão de Oliveira Júnior (born 12 July 2000), commonly known as Vinícius Júnior or Vini Jr. (Brazilian Portuguese: [viˈnisjuz ˈʒũɲoʁ]),[3] is a Brazilian professional footballer who plays as a winger for La Liga club Real Madrid and the Brazil national team. Considered one of the best players in the world, he is known for his speed, strong dribbling abilities, and playmaking skills.[4][5][6][7][8]
+
+                                Born in São Gonçalo, Vinícius began his professional career at Flamengo, where he made his senior debut in 2017, at age 16. A few weeks later, Vinícius was the subject of a transfer to La Liga club Real Madrid, for whom he signed for in a £38 million deal, which was a national record for an U-18 player.[9] The transfer was made effective after his 18th birthday, with Vinícius debuting for the club in 2018–19. By his fourth season, Vinícius had established himself as a prominent member in Real Madrid's squad, helping the club win the 2021–22 La Liga title[10] and scoring the winning goal in Real Madrid's 2022 UEFA Champions League final win.[11]
+                                
+                                At his youth stage for Brazil, he was a key player in the victory at the 2015 South American U-15 Championship and 2017 South American U-17 Championship, finishing as leading goalscorer in the latter competition. He made his senior debut in 2021 and helped his nation to a runner-up finish at the 2021 Copa América and represented them at the 2022 FIFA World Cup in Qatar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodrygo -->
+        <div class="modal js-modal-rodrygo">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-rodrygo">
+                <div class="player-profile player-profile-rodrygo js-rodrygo-profile">
+                    <h2 class="player-profile__heading heading">rodrygo</h2>
+                    <label for="" class="player-profile-close js-rodrygo-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/forwards/RODRYGO.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/BRAZIL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">BRAZIL</span>
+                            </div>
+                            <p class="player-profile__info-text">Rodrygo Silva de Goes (Brazilian Portuguese: [ʁoˈdɾiɡu ˈsiwvɐ dʒi ˈɡɔjs];[4] born 9 January 2001), simply known as Rodrygo, is a Brazilian professional footballer who plays as a winger or forward for La Liga club Real Madrid and the Brazil national team.
+
+                                He began his career with Santos, where he played 80 games and scored 17 goals before a €45 million transfer to Real Madrid in 2019. At international level, Rodrygo made his senior debut for Brazil in 2019, aged only 18.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Joselu -->
+        <div class="modal js-modal-joselu">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-joselu">
+                <div class="player-profile player-profile-joselu js-joselu-profile">
+                    <h2 class="player-profile__heading heading">JOSELU</h2>
+                    <label for="" class="player-profile-close js-joselu-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/forwards/JOSELU.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/SPAIN.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">SPAIN</span>
+                            </div>
+                            <p class="player-profile__info-text">José Luis Mato Sanmartín (born 27 March 1990), known as Joselu, is a Spanish professional footballer who plays as a forward for La Liga club Real Madrid, on loan from Segunda División club Espanyol, and the Spain national team.[4]
+
+                                Joselu began his career with Celta de Vigo before being purchased by Real Madrid in the summer of 2009. He was a prolific goalscorer for their B-team, scoring 40 goals in 72 appearances but he was unable to break into the first team and was sold to Bundesliga side 1899 Hoffenheim in August 2012, being loaned out to Eintracht Frankfurt in 2013–14. Joselu joined Hannover 96 in June 2014, then Premier League side Stoke City a year later for a fee of £5.75 million. In 2017, he moved to Newcastle United for £5 million, where he spent two seasons before moving to Alavés for an undisclosed fee.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brahim -->
+        <div class="modal js-modal-brahim">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-brahim">
+                <div class="player-profile player-profile-brahim js-brahim-profile">
+                    <h2 class="player-profile__heading heading">Brahim Díaz</h2>
+                    <label for="" class="player-profile-close js-brahim-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/players/forwards/BRAHIM.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/SPAIN.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">SPAIN</span>
+                            </div>
+                            <p class="player-profile__info-text">Brahim Abdelkader Díaz (Spanish pronunciation: [bɾaˈin ˈdi.aθ]; Arabic: إبراهيم عبد القادر دياز; born 3 August 1999), known as Brahim Díaz or simply Brahim, is a Spanish professional footballer who plays as an attacking midfielder for La Liga club Real Madrid.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cristiano Ronaldo -->
+        <div class="modal js-modal-cr7">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-cr7">
+                <div class="player-profile player-profile-cristiano-ronaldo js-cristiano-ronaldo-profile">
+                    <h2 class="player-profile__heading heading">CRISTIANO RONALDO</h2>
+                    <label for="" class="player-profile-close js-cristiano-ronaldo-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/legend/CRISTIANO_RONALDO.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/PORTUGAL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">PORTUGAL</span>
+                            </div>
+                            <p class="player-profile__info-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaldu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team. Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards,[note 3] a record three UEFA Best Player in Europe, and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League. Ronaldo holds the records for most appearances (183), goals (140) and assists (42) in the Champions League, goals in the European Championship (14), international goals (123) and international appearances (200). He is one of the few players to have made over 1,100 professional career appearances, and has scored over 800 official senior career goals for club and country, making him the highest goalscorer of all time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ronaldo De Lima -->
+        <div class="modal js-modal-ronaldo">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-ronaldo">
+                <div class="player-profile player-profile-ronaldo js-ronaldo-profile">
+                    <h2 class="player-profile__heading heading">RONALDO</h2>
+                    <label for="" class="player-profile-close js-ronaldo-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/legend/RONALDO.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/PORTUGAL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">PORTUGAL</span>
+                            </div>
+                            <p class="player-profile__info-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaldu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team. Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards,[note 3] a record three UEFA Best Player in Europe, and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League. Ronaldo holds the records for most appearances (183), goals (140) and assists (42) in the Champions League, goals in the European Championship (14), international goals (123) and international appearances (200). He is one of the few players to have made over 1,100 professional career appearances, and has scored over 800 official senior career goals for club and country, making him the highest goalscorer of all time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- David Beckham -->
+        <div class="modal js-modal-beckham">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-beckham">
+                <div class="player-profile player-profile-beckham js-beckham-profile">
+                    <h2 class="player-profile__heading heading">BECKHAM</h2>
+                    <label for="" class="player-profile-close js-beckham-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/legend/BECKHAM.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/PORTUGAL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">PORTUGAL</span>
+                            </div>
+                            <p class="player-profile__info-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaldu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team. Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards,[note 3] a record three UEFA Best Player in Europe, and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League. Ronaldo holds the records for most appearances (183), goals (140) and assists (42) in the Champions League, goals in the European Championship (14), international goals (123) and international appearances (200). He is one of the few players to have made over 1,100 professional career appearances, and has scored over 800 official senior career goals for club and country, making him the highest goalscorer of all time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zidane -->
+        <div class="modal js-modal-zidane">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-zidane">
+                <div class="player-profile player-profile-zidane js-zidane-profile">
+                    <h2 class="player-profile__heading heading">ZIDANE</h2>
+                    <label for="" class="player-profile-close js-zidane-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/legend/ZIDANE.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/PORTUGAL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">PORTUGAL</span>
+                            </div>
+                            <p class="player-profile__info-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaldu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team. Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards,[note 3] a record three UEFA Best Player in Europe, and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League. Ronaldo holds the records for most appearances (183), goals (140) and assists (42) in the Champions League, goals in the European Championship (14), international goals (123) and international appearances (200). He is one of the few players to have made over 1,100 professional career appearances, and has scored over 800 official senior career goals for club and country, making him the highest goalscorer of all time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carlos -->
+        <div class="modal js-modal-carlos">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-carlos">
+                <div class="player-profile player-profile-carlos js-carlos-profile">
+                    <h2 class="player-profile__heading heading">ROBERTO CARLOS</h2>
+                    <label for="" class="player-profile-close js-carlos-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/legend/CARLOS.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/PORTUGAL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">PORTUGAL</span>
+                            </div>
+                            <p class="player-profile__info-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaldu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team. Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards,[note 3] a record three UEFA Best Player in Europe, and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League. Ronaldo holds the records for most appearances (183), goals (140) and assists (42) in the Champions League, goals in the European Championship (14), international goals (123) and international appearances (200). He is one of the few players to have made over 1,100 professional career appearances, and has scored over 800 official senior career goals for club and country, making him the highest goalscorer of all time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ruud van Nistelrooy -->
+        <div class="modal js-modal-nistelrooy">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-nistelrooy">
+                <div class="player-profile player-profile-nistelrooy js-nistelrooy-profile">
+                    <h2 class="player-profile__heading heading">RUUD VAN NISTELROOY</h2>
+                    <label for="" class="player-profile-close js-nistelrooy-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/legend/NISTELROOY.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/PORTUGAL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">PORTUGAL</span>
+                            </div>
+                            <p class="player-profile__info-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaldu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team. Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards,[note 3] a record three UEFA Best Player in Europe, and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League. Ronaldo holds the records for most appearances (183), goals (140) and assists (42) in the Champions League, goals in the European Championship (14), international goals (123) and international appearances (200). He is one of the few players to have made over 1,100 professional career appearances, and has scored over 800 official senior career goals for club and country, making him the highest goalscorer of all time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kaka -->
+        <div class="modal js-modal-kaka">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-kaka">
+                <div class="player-profile player-profile-kaka js-kaka-profile">
+                    <h2 class="player-profile__heading heading">RICARDO KAKA</h2>
+                    <label for="" class="player-profile-close js-kaka-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/legend/KAKA.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/PORTUGAL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">PORTUGAL</span>
+                            </div>
+                            <p class="player-profile__info-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaldu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team. Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards,[note 3] a record three UEFA Best Player in Europe, and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League. Ronaldo holds the records for most appearances (183), goals (140) and assists (42) in the Champions League, goals in the European Championship (14), international goals (123) and international appearances (200). He is one of the few players to have made over 1,100 professional career appearances, and has scored over 800 official senior career goals for club and country, making him the highest goalscorer of all time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Casillas -->
+        <div class="modal js-modal-casillas">
+            <div class="modal__overlay"></div>
+            <div class="modal__body js-modal-body-casillas">
+                <div class="player-profile player-profile-casillas js-casillas-profile">
+                    <h2 class="player-profile__heading heading">IKER CASILLAS</h2>
+                    <label for="" class="player-profile-close js-casillas-close"><i class="player-profile-close-icon fa-solid fa-xmark"></i></label>
+                    <div class="player-profile__content">
+                        <img src="./assets/img/legend/CASILLAS.png" alt="" class="player-profile__img">
+                        <div class="player-profile__info">
+                            <div class="player-profile__info-national">
+                                <img src="./assets/img/flag/PORTUGAL.png" alt="" class="player-profile__info-national-img">
+                                <span class="player-profile__info-national-name">PORTUGAL</span>
+                            </div>
+                            <p class="player-profile__info-text">Cristiano Ronaldo dos Santos Aveiro GOIH ComM (Portuguese pronunciation: [kɾiʃˈtjɐnu ʁɔˈnaldu]; born 5 February 1985) is a Portuguese professional footballer who plays as a forward for and captains both Saudi Pro League club Al Nassr and the Portugal national team. Widely regarded as one of the greatest players of all time, Ronaldo has won five Ballon d'Or awards,[note 3] a record three UEFA Best Player in Europe, and four European Golden Shoes, the most by a European player. He has won 32 trophies in his career, including seven league titles, five UEFA Champions Leagues, the UEFA European Championship and the UEFA Nations League. Ronaldo holds the records for most appearances (183), goals (140) and assists (42) in the Champions League, goals in the European Championship (14), international goals (123) and international appearances (200). He is one of the few players to have made over 1,100 professional career appearances, and has scored over 800 official senior career goals for club and country, making him the highest goalscorer of all time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Global variable -->
+    
+    <!-- Open/Close modal login/register -->
+    <script>
+        const modalBody =document.querySelector('.js-modal-body')
+        const modal = document.querySelector('.js-modal')
+        const registerBtn = document.querySelector('.js-register')
+        const loginBtn = document.querySelector('.js-login')
+        const closeInRegister = document.querySelector('.js-close-in-register')
+        const closeInLogin = document.querySelector('.js-close-in-login')
+        const modalLogin =document.querySelector('.js-login-modal')
+        const modalRegister =document.querySelector('.js-register-modal')
+        const registerInLoginBtn = document.querySelector('.js-register-in-login')
+        const loginInRegisterBtn = document.querySelector('.js-login-in-register')
+        function showRegister(){
+            modal.classList.add('open')
+            modalRegister.classList.add('open')
+            modalLogin.classList.remove('open')
+        }
+
+        function showLogin(){
+            modal.classList.add('open')
+            modalRegister.classList.remove('open')
+            modalLogin.classList.add('open')
+        }
+
+        function hideForm(){
+            modal.classList.remove('open')
+        }
+
+        
+        registerInLoginBtn.addEventListener('click',showRegister)
+        registerBtn.addEventListener('click',showRegister)
+
+        loginInRegisterBtn.addEventListener('click',showLogin)
+        loginBtn.addEventListener('click',showLogin)
+
+
+        //Hide form by close mark
+        closeInRegister.addEventListener('click',hideForm)
+        closeInLogin.addEventListener('click',hideForm)
+
+        //Hide form by overlay
+        modal.addEventListener('click',hideForm)
+        modalBody.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Slidershow -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("js-slide");
+        let dots = document.getElementsByClassName("js-dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";nha
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <!-- Show/Hide list players -->
+    <script>
+        const gkBtn = document.querySelector('.js-gk-btn')
+        const dfBtn = document.querySelector('.js-df-btn')
+        const mfBtn = document.querySelector('.js-mf-btn')
+        const fwBtn = document.querySelector('.js-fw-btn')
+        const gkList = document.querySelector('.js-gk-list')
+        const dfList = document.querySelector('.js-df-list')
+        const mfList = document.querySelector('.js-mf-list')
+        const fwList = document.querySelector('.js-fw-list')
+
+        function showGKList(){
+            //Show list
+            gkList.classList.add('open')
+            dfList.classList.remove('open')
+            mfList.classList.remove('open')
+            fwList.classList.remove('open')
+
+            //Highlight button
+            gkBtn.classList.add('active')
+            dfBtn.classList.remove('active')
+            mfBtn.classList.remove('active')
+            fwBtn.classList.remove('active')
+        }
+
+        function showDFList(){
+            dfList.classList.add('open')
+            gkList.classList.remove('open')
+            mfList.classList.remove('open')
+            fwList.classList.remove('open')
+
+            gkBtn.classList.remove('active')
+            dfBtn.classList.add('active')
+            mfBtn.classList.remove('active')
+            fwBtn.classList.remove('active')
+        }
+
+        function showMFList(){
+            mfList.classList.add('open')
+            gkList.classList.remove('open')
+            dfList.classList.remove('open')
+            fwList.classList.remove('open')
+
+            gkBtn.classList.remove('active')
+            dfBtn.classList.remove('active')
+            mfBtn.classList.add('active')
+            fwBtn.classList.remove('active')
+        }
+
+        function showFWList(){
+            fwList.classList.add('open')
+            gkList.classList.remove('open')
+            mfList.classList.remove('open')
+            dfList.classList.remove('open')
+
+            gkBtn.classList.remove('active')
+            dfBtn.classList.remove('active')
+            mfBtn.classList.remove('active')
+            fwBtn.classList.add('active')
+        }
+
+        gkBtn.addEventListener('click',showGKList)
+        dfBtn.addEventListener('click',showDFList)
+        mfBtn.addEventListener('click',showMFList)
+        fwBtn.addEventListener('click',showFWList)
+
+        
+    </script>
+
+    <!-- Nav sticky -->
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {stickyNav()};
+
+        // Get the header
+        var nav = document.getElementById("js-header__nav");
+
+        // Get the offset position of the navbar
+        var sticky = nav.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function stickyNav() {
+        if (window.pageYOffset > sticky) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <!-- Show/hide CR7 info -->
+    <script>
+        const modalBodyCR7 =document.querySelector('.js-modal-body-cr7')
+        const modalCR7 = document.querySelector('.js-modal-cr7')
+        const cr7Btn = document.querySelector('.js-cristiano-ronaldo-modal-btn')
+        const cr7Profile =document.querySelector('.js-cristiano-ronaldo-profile')
+        const cr7CloseBtn =document.querySelector('.js-cristiano-ronaldo-close')
+        function showCR7Profile() {
+            modalCR7.classList.add('open')
+            cr7Profile.classList.add('open')
+        }
+
+        function hideCR7Profile(){
+            modalCR7.classList.remove('open')
+        }
+
+        //Show profile
+        cr7Btn.addEventListener('click',showCR7Profile)
+
+        //Hide profile by close mark
+        cr7CloseBtn.addEventListener('click',hideCR7Profile)
+
+        //Hide profile by overlay
+        modalCR7.addEventListener('click',hideCR7Profile)
+        modalBodyCR7.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Ronaldo info -->
+    <script>
+        const modalBodyRonaldo =document.querySelector('.js-modal-body-ronaldo')
+        const modalRonaldo = document.querySelector('.js-modal-ronaldo')
+        const RonaldoBtn = document.querySelector('.js-ronaldo-modal-btn')
+        const RonaldoProfile =document.querySelector('.js-ronaldo-profile')
+        const RonaldoCloseBtn =document.querySelector('.js-ronaldo-close')
+        function showRonaldoProfile() {
+            modalRonaldo.classList.add('open')
+            RonaldoProfile.classList.add('open')
+        }
+
+        function hideRonaldoProfile(){
+            modalRonaldo.classList.remove('open')
+        }
+
+        //Show profile
+        RonaldoBtn.addEventListener('click',showRonaldoProfile)
+
+        //Hide profile by close mark
+        RonaldoCloseBtn.addEventListener('click',hideRonaldoProfile)
+
+        //Hide profile by overlay
+        modalRonaldo.addEventListener('click',hideRonaldoProfile)
+        modalBodyRonaldo.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Beckham info -->
+    <script>
+        const modalBodyBeckham =document.querySelector('.js-modal-body-beckham')
+        const modalBeckham = document.querySelector('.js-modal-beckham')
+        const BeckhamBtn = document.querySelector('.js-beckham-modal-btn')
+        const BeckhamProfile =document.querySelector('.js-beckham-profile')
+        const BeckhamCloseBtn =document.querySelector('.js-beckham-close')
+        function showBeckhamProfile() {
+            modalBeckham.classList.add('open')
+            BeckhamProfile.classList.add('open')
+        }
+
+        function hideBeckhamProfile(){
+            modalBeckham.classList.remove('open')
+        }
+
+        //Show profile
+        BeckhamBtn.addEventListener('click',showBeckhamProfile)
+
+        //Hide profile by close mark
+        BeckhamCloseBtn.addEventListener('click',hideBeckhamProfile)
+
+        //Hide profile by overlay
+        modalBeckham.addEventListener('click',hideBeckhamProfile)
+        modalBodyBeckham.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Zidane info -->
+    <script>
+        const modalBodyZidane =document.querySelector('.js-modal-body-zidane')
+        const modalZidane = document.querySelector('.js-modal-zidane')
+        const ZidaneBtn = document.querySelector('.js-zidane-modal-btn')
+        const ZidaneProfile =document.querySelector('.js-zidane-profile')
+        const ZidaneCloseBtn =document.querySelector('.js-zidane-close')
+        function showZidaneProfile() {
+            modalZidane.classList.add('open')
+            ZidaneProfile.classList.add('open')
+        }
+
+        function hideZidaneProfile(){
+            modalZidane.classList.remove('open')
+        }
+
+        //Show profile
+        ZidaneBtn.addEventListener('click',showZidaneProfile)
+
+        //Hide profile by close mark
+        ZidaneCloseBtn.addEventListener('click',hideZidaneProfile)
+
+        //Hide profile by overlay
+        modalZidane.addEventListener('click',hideZidaneProfile)
+        modalBodyZidane.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Carlos info -->
+    <script>
+        const modalBodyCarlos =document.querySelector('.js-modal-body-carlos')
+        const modalCarlos = document.querySelector('.js-modal-carlos')
+        const CarlosBtn = document.querySelector('.js-carlos-modal-btn')
+        const CarlosProfile =document.querySelector('.js-carlos-profile')
+        const CarlosCloseBtn =document.querySelector('.js-carlos-close')
+        function showCarlosProfile() {
+            modalCarlos.classList.add('open')
+            CarlosProfile.classList.add('open')
+        }
+
+        function hideCarlosProfile(){
+            modalCarlos.classList.remove('open')
+        }
+
+        //Show profile
+        CarlosBtn.addEventListener('click',showCarlosProfile)
+
+        //Hide profile by close mark
+        CarlosCloseBtn.addEventListener('click',hideCarlosProfile)
+
+        //Hide profile by overlay
+        modalCarlos.addEventListener('click',hideCarlosProfile)
+        modalBodyCarlos.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Nistelrooy info -->
+    <script>
+        const modalBodyNistelrooy =document.querySelector('.js-modal-body-nistelrooy')
+        const modalNistelrooy = document.querySelector('.js-modal-nistelrooy')
+        const NistelrooyBtn = document.querySelector('.js-nistelrooy-modal-btn')
+        const NistelrooyProfile =document.querySelector('.js-nistelrooy-profile')
+        const NistelrooyCloseBtn =document.querySelector('.js-nistelrooy-close')
+        function showNistelrooyProfile() {
+            modalNistelrooy.classList.add('open')
+            NistelrooyProfile.classList.add('open')
+        }
+
+        function hideNistelrooyProfile(){
+            modalNistelrooy.classList.remove('open')
+        }
+
+        //Show profile
+        NistelrooyBtn.addEventListener('click',showNistelrooyProfile)
+
+        //Hide profile by close mark
+        NistelrooyCloseBtn.addEventListener('click',hideNistelrooyProfile)
+
+        //Hide profile by overlay
+        modalNistelrooy.addEventListener('click',hideNistelrooyProfile)
+        modalBodyNistelrooy.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Kaka info -->
+    <script>
+        const modalBodyKaka =document.querySelector('.js-modal-body-kaka')
+        const modalKaka = document.querySelector('.js-modal-kaka')
+        const KakaBtn = document.querySelector('.js-kaka-modal-btn')
+        const KakaProfile =document.querySelector('.js-kaka-profile')
+        const KakaCloseBtn =document.querySelector('.js-kaka-close')
+        function showKakaProfile() {
+            modalKaka.classList.add('open')
+            KakaProfile.classList.add('open')
+        }
+
+        function hideKakaProfile(){
+            modalKaka.classList.remove('open')
+        }
+
+        //Show profile
+        KakaBtn.addEventListener('click',showKakaProfile)
+
+        //Hide profile by close mark
+        KakaCloseBtn.addEventListener('click',hideKakaProfile)
+
+        //Hide profile by overlay
+        modalKaka.addEventListener('click',hideKakaProfile)
+        modalBodyKaka.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Casillas info -->
+    <script>
+        const modalBodyCasillas =document.querySelector('.js-modal-body-casillas')
+        const modalCasillas = document.querySelector('.js-modal-casillas')
+        const CasillasBtn = document.querySelector('.js-casillas-modal-btn')
+        const CasillasProfile =document.querySelector('.js-casillas-profile')
+        const CasillasCloseBtn =document.querySelector('.js-casillas-close')
+        function showCasillasProfile() {
+            modalCasillas.classList.add('open')
+            CasillasProfile.classList.add('open')
+        }
+
+        function hideCasillasProfile(){
+            modalCasillas.classList.remove('open')
+        }
+
+        //Show profile
+        CasillasBtn.addEventListener('click',showCasillasProfile)
+
+        //Hide profile by close mark
+        CasillasCloseBtn.addEventListener('click',hideCasillasProfile)
+
+        //Hide profile by overlay
+        modalCasillas.addEventListener('click',hideCasillasProfile)
+        modalBodyCasillas.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Courtois info -->
+    <script>
+        const modalBodyCourtois =document.querySelector('.js-modal-body-courtois')
+        const modalCourtois = document.querySelector('.js-modal-courtois')
+        const CourtoisBtn = document.querySelector('.js-courtois-modal-btn')
+        const CourtoisProfile =document.querySelector('.js-courtois-profile')
+        const CourtoisCloseBtn =document.querySelector('.js-courtois-close')
+        function showCourtoisProfile() {
+            modalCourtois.classList.add('open')
+            CourtoisProfile.classList.add('open')
+        }
+
+        function hideCourtoisProfile(){
+            modalCourtois.classList.remove('open')
+        }
+
+        //Show profile
+        CourtoisBtn.addEventListener('click',showCourtoisProfile)
+
+        //Hide profile by close mark
+        CourtoisCloseBtn.addEventListener('click',hideCourtoisProfile)
+
+        //Hide profile by overlay
+        modalCourtois.addEventListener('click',hideCourtoisProfile)
+        modalBodyCourtois.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Lunin info -->
+    <script>
+        const modalBodyLunin =document.querySelector('.js-modal-body-lunin')
+        const modalLunin = document.querySelector('.js-modal-lunin')
+        const LuninBtn = document.querySelector('.js-lunin-modal-btn')
+        const LuninProfile =document.querySelector('.js-lunin-profile')
+        const LuninCloseBtn =document.querySelector('.js-lunin-close')
+        function showLuninProfile() {
+            modalLunin.classList.add('open')
+            LuninProfile.classList.add('open')
+        }
+
+        function hideLuninProfile(){
+            modalLunin.classList.remove('open')
+        }
+
+        //Show profile
+        LuninBtn.addEventListener('click',showLuninProfile)
+
+        //Hide profile by close mark
+        LuninCloseBtn.addEventListener('click',hideLuninProfile)
+
+        //Hide profile by overlay
+        modalLunin.addEventListener('click',hideLuninProfile)
+        modalBodyLunin.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Carvajal info -->
+    <script>
+        const modalBodyCarvajal =document.querySelector('.js-modal-body-carvajal')
+        const modalCarvajal = document.querySelector('.js-modal-carvajal')
+        const CarvajalBtn = document.querySelector('.js-carvajal-modal-btn')
+        const CarvajalProfile =document.querySelector('.js-carvajal-profile')
+        const CarvajalCloseBtn =document.querySelector('.js-carvajal-close')
+        function showCarvajalProfile() {
+            modalCarvajal.classList.add('open')
+            CarvajalProfile.classList.add('open')
+        }
+
+        function hideCarvajalProfile(){
+            modalCarvajal.classList.remove('open')
+        }
+
+        //Show profile
+        CarvajalBtn.addEventListener('click',showCarvajalProfile)
+
+        //Hide profile by close mark
+        CarvajalCloseBtn.addEventListener('click',hideCarvajalProfile)
+
+        //Hide profile by overlay
+        modalCarvajal.addEventListener('click',hideCarvajalProfile)
+        modalBodyCarvajal.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Militao info -->
+    <script>
+        const modalBodyMilitao =document.querySelector('.js-modal-body-militao')
+        const modalMilitao = document.querySelector('.js-modal-militao')
+        const MilitaoBtn = document.querySelector('.js-militao-modal-btn')
+        const MilitaoProfile =document.querySelector('.js-militao-profile')
+        const MilitaoCloseBtn =document.querySelector('.js-militao-close')
+        function showMilitaoProfile() {
+            modalMilitao.classList.add('open')
+            MilitaoProfile.classList.add('open')
+        }
+
+        function hideMilitaoProfile(){
+            modalMilitao.classList.remove('open')
+        }
+
+        //Show profile
+        MilitaoBtn.addEventListener('click',showMilitaoProfile)
+
+        //Hide profile by close mark
+        MilitaoCloseBtn.addEventListener('click',hideMilitaoProfile)
+
+        //Hide profile by overlay
+        modalMilitao.addEventListener('click',hideMilitaoProfile)
+        modalBodyMilitao.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Alaba info -->
+    <script>
+        const modalBodyAlaba =document.querySelector('.js-modal-body-alaba')
+        const modalAlaba = document.querySelector('.js-modal-alaba')
+        const AlabaBtn = document.querySelector('.js-alaba-modal-btn')
+        const AlabaProfile =document.querySelector('.js-alaba-profile')
+        const AlabaCloseBtn =document.querySelector('.js-alaba-close')
+        function showAlabaProfile() {
+            modalAlaba.classList.add('open')
+            AlabaProfile.classList.add('open')
+        }
+
+        function hideAlabaProfile(){
+            modalAlaba.classList.remove('open')
+        }
+
+        //Show profile
+        AlabaBtn.addEventListener('click',showAlabaProfile)
+
+        //Hide profile by close mark
+        AlabaCloseBtn.addEventListener('click',hideAlabaProfile)
+
+        //Hide profile by overlay
+        modalAlaba.addEventListener('click',hideAlabaProfile)
+        modalBodyAlaba.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Nacho info -->
+    <script>
+        const modalBodyNacho =document.querySelector('.js-modal-body-nacho')
+        const modalNacho = document.querySelector('.js-modal-nacho')
+        const NachoBtn = document.querySelector('.js-nacho-modal-btn')
+        const NachoProfile =document.querySelector('.js-nacho-profile')
+        const NachoCloseBtn =document.querySelector('.js-nacho-close')
+        function showNachoProfile() {
+            modalNacho.classList.add('open')
+            NachoProfile.classList.add('open')
+        }
+
+        function hideNachoProfile(){
+            modalNacho.classList.remove('open')
+        }
+
+        //Show profile
+        NachoBtn.addEventListener('click',showNachoProfile)
+
+        //Hide profile by close mark
+        NachoCloseBtn.addEventListener('click',hideNachoProfile)
+
+        //Hide profile by overlay
+        modalNacho.addEventListener('click',hideNachoProfile)
+        modalBodyNacho.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Odriozola info -->
+    <script>
+        const modalBodyOdriozola =document.querySelector('.js-modal-body-odriozola')
+        const modalOdriozola = document.querySelector('.js-modal-odriozola')
+        const OdriozolaBtn = document.querySelector('.js-odriozola-modal-btn')
+        const OdriozolaProfile =document.querySelector('.js-odriozola-profile')
+        const OdriozolaCloseBtn =document.querySelector('.js-odriozola-close')
+        function showOdriozolaProfile() {
+            modalOdriozola.classList.add('open')
+            OdriozolaProfile.classList.add('open')
+        }
+
+        function hideOdriozolaProfile(){
+            modalOdriozola.classList.remove('open')
+        }
+
+        //Show profile
+        OdriozolaBtn.addEventListener('click',showOdriozolaProfile)
+
+        //Hide profile by close mark
+        OdriozolaCloseBtn.addEventListener('click',hideOdriozolaProfile)
+
+        //Hide profile by overlay
+        modalOdriozola.addEventListener('click',hideOdriozolaProfile)
+        modalBodyOdriozola.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Lucas info -->
+    <script>
+        const modalBodyLucas =document.querySelector('.js-modal-body-lucas')
+        const modalLucas = document.querySelector('.js-modal-lucas')
+        const LucasBtn = document.querySelector('.js-lucas-modal-btn')
+        const LucasProfile =document.querySelector('.js-lucas-profile')
+        const LucasCloseBtn =document.querySelector('.js-lucas-close')
+        function showLucasProfile() {
+            modalLucas.classList.add('open')
+            LucasProfile.classList.add('open')
+        }
+
+        function hideLucasProfile(){
+            modalLucas.classList.remove('open')
+        }
+
+        //Show profile
+        LucasBtn.addEventListener('click',showLucasProfile)
+
+        //Hide profile by close mark
+        LucasCloseBtn.addEventListener('click',hideLucasProfile)
+
+        //Hide profile by overlay
+        modalLucas.addEventListener('click',hideLucasProfile)
+        modalBodyLucas.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Garcia info -->
+    <script>
+        const modalBodyGarcia =document.querySelector('.js-modal-body-garcia')
+        const modalGarcia = document.querySelector('.js-modal-garcia')
+        const GarciaBtn = document.querySelector('.js-garcia-modal-btn')
+        const GarciaProfile =document.querySelector('.js-garcia-profile')
+        const GarciaCloseBtn =document.querySelector('.js-garcia-close')
+        function showGarciaProfile() {
+            modalGarcia.classList.add('open')
+            GarciaProfile.classList.add('open')
+        }
+
+        function hideGarciaProfile(){
+            modalGarcia.classList.remove('open')
+        }
+
+        //Show profile
+        GarciaBtn.addEventListener('click',showGarciaProfile)
+
+        //Hide profile by close mark
+        GarciaCloseBtn.addEventListener('click',hideGarciaProfile)
+
+        //Hide profile by overlay
+        modalGarcia.addEventListener('click',hideGarciaProfile)
+        modalBodyGarcia.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Rudiger info -->
+    <script>
+        const modalBodyRudiger =document.querySelector('.js-modal-body-rudiger')
+        const modalRudiger = document.querySelector('.js-modal-rudiger')
+        const RudigerBtn = document.querySelector('.js-rudiger-modal-btn')
+        const RudigerProfile =document.querySelector('.js-rudiger-profile')
+        const RudigerCloseBtn =document.querySelector('.js-rudiger-close')
+        function showRudigerProfile() {
+            modalRudiger.classList.add('open')
+            RudigerProfile.classList.add('open')
+        }
+
+        function hideRudigerProfile(){
+            modalRudiger.classList.remove('open')
+        }
+
+        //Show profile
+        RudigerBtn.addEventListener('click',showRudigerProfile)
+
+        //Hide profile by close mark
+        RudigerCloseBtn.addEventListener('click',hideRudigerProfile)
+
+        //Hide profile by overlay
+        modalRudiger.addEventListener('click',hideRudigerProfile)
+        modalBodyRudiger.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Mendy info -->
+    <script>
+        const modalBodyMendy =document.querySelector('.js-modal-body-mendy')
+        const modalMendy = document.querySelector('.js-modal-mendy')
+        const MendyBtn = document.querySelector('.js-mendy-modal-btn')
+        const MendyProfile =document.querySelector('.js-mendy-profile')
+        const MendyCloseBtn =document.querySelector('.js-mendy-close')
+        function showMendyProfile() {
+            modalMendy.classList.add('open')
+            MendyProfile.classList.add('open')
+        }
+
+        function hideMendyProfile(){
+            modalMendy.classList.remove('open')
+        }
+
+        //Show profile
+        MendyBtn.addEventListener('click',showMendyProfile)
+
+        //Hide profile by close mark
+        MendyCloseBtn.addEventListener('click',hideMendyProfile)
+
+        //Hide profile by overlay
+        modalMendy.addEventListener('click',hideMendyProfile)
+        modalBodyMendy.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Bellingham info -->
+    <script>
+        const modalBodyBellingham =document.querySelector('.js-modal-body-bellingham')
+        const modalBellingham = document.querySelector('.js-modal-bellingham')
+        const BellinghamBtn = document.querySelector('.js-bellingham-modal-btn')
+        const BellinghamProfile =document.querySelector('.js-bellingham-profile')
+        const BellinghamCloseBtn =document.querySelector('.js-bellingham-close')
+        function showBellinghamProfile() {
+            modalBellingham.classList.add('open')
+            BellinghamProfile.classList.add('open')
+        }
+
+        function hideBellinghamProfile(){
+            modalBellingham.classList.remove('open')
+        }
+
+        //Show profile
+        BellinghamBtn.addEventListener('click',showBellinghamProfile)
+
+        //Hide profile by close mark
+        BellinghamCloseBtn.addEventListener('click',hideBellinghamProfile)
+
+        //Hide profile by overlay
+        modalBellingham.addEventListener('click',hideBellinghamProfile)
+        modalBodyBellingham.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Kroos info -->
+    <script>
+        const modalBodyKroos =document.querySelector('.js-modal-body-kroos')
+        const modalKroos = document.querySelector('.js-modal-kroos')
+        const KroosBtn = document.querySelector('.js-kroos-modal-btn')
+        const KroosProfile =document.querySelector('.js-kroos-profile')
+        const KroosCloseBtn =document.querySelector('.js-kroos-close')
+        function showKroosProfile() {
+            modalKroos.classList.add('open')
+            KroosProfile.classList.add('open')
+        }
+
+        function hideKroosProfile(){
+            modalKroos.classList.remove('open')
+        }
+
+        //Show profile
+        KroosBtn.addEventListener('click',showKroosProfile)
+
+        //Hide profile by close mark
+        KroosCloseBtn.addEventListener('click',hideKroosProfile)
+
+        //Hide profile by overlay
+        modalKroos.addEventListener('click',hideKroosProfile)
+        modalBodyKroos.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Modric info -->
+    <script>
+        const modalBodyModric =document.querySelector('.js-modal-body-modric')
+        const modalModric = document.querySelector('.js-modal-modric')
+        const ModricBtn = document.querySelector('.js-modric-modal-btn')
+        const ModricProfile =document.querySelector('.js-modric-profile')
+        const ModricCloseBtn =document.querySelector('.js-modric-close')
+        function showModricProfile() {
+            modalModric.classList.add('open')
+            ModricProfile.classList.add('open')
+        }
+
+        function hideModricProfile(){
+            modalModric.classList.remove('open')
+        }
+
+        //Show profile
+        ModricBtn.addEventListener('click',showModricProfile)
+
+        //Hide profile by close mark
+        ModricCloseBtn.addEventListener('click',hideModricProfile)
+
+        //Hide profile by overlay
+        modalModric.addEventListener('click',hideModricProfile)
+        modalBodyModric.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Camavinga info -->
+    <script>
+        const modalBodyCamavinga =document.querySelector('.js-modal-body-camavinga')
+        const modalCamavinga = document.querySelector('.js-modal-camavinga')
+        const CamavingaBtn = document.querySelector('.js-camavinga-modal-btn')
+        const CamavingaProfile =document.querySelector('.js-camavinga-profile')
+        const CamavingaCloseBtn =document.querySelector('.js-camavinga-close')
+        function showCamavingaProfile() {
+            modalCamavinga.classList.add('open')
+            CamavingaProfile.classList.add('open')
+        }
+
+        function hideCamavingaProfile(){
+            modalCamavinga.classList.remove('open')
+        }
+
+        //Show profile
+        CamavingaBtn.addEventListener('click',showCamavingaProfile)
+
+        //Hide profile by close mark
+        CamavingaCloseBtn.addEventListener('click',hideCamavingaProfile)
+
+        //Hide profile by overlay
+        modalCamavinga.addEventListener('click',hideCamavingaProfile)
+        modalBodyCamavinga.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Valverde info -->
+    <script>
+        const modalBodyValverde =document.querySelector('.js-modal-body-valverde')
+        const modalValverde = document.querySelector('.js-modal-valverde')
+        const ValverdeBtn = document.querySelector('.js-valvarde-modal-btn')
+        const ValverdeProfile =document.querySelector('.js-valverde-profile')
+        const ValverdeCloseBtn =document.querySelector('.js-valverde-close')
+        function showValverdeProfile() {
+            modalValverde.classList.add('open')
+            ValverdeProfile.classList.add('open')
+        }
+
+        function hideValverdeProfile(){
+            modalValverde.classList.remove('open')
+        }
+
+        //Show profile
+        ValverdeBtn.addEventListener('click',showValverdeProfile)
+
+        //Hide profile by close mark
+        ValverdeCloseBtn.addEventListener('click',hideValverdeProfile)
+
+        //Hide profile by overlay
+        modalValverde.addEventListener('click',hideValverdeProfile)
+        modalBodyValverde.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Tchouameni info -->
+    <script>
+        const modalBodyTchouameni =document.querySelector('.js-modal-body-tchouameni')
+        const modalTchouameni = document.querySelector('.js-modal-tchouameni')
+        const TchouameniBtn = document.querySelector('.js-tchouameni-modal-btn')
+        const TchouameniProfile =document.querySelector('.js-tchouameni-profile')
+        const TchouameniCloseBtn =document.querySelector('.js-tchouameni-close')
+        function showTchouameniProfile() {
+            modalTchouameni.classList.add('open')
+            TchouameniProfile.classList.add('open')
+        }
+
+        function hideTchouameniProfile(){
+            modalTchouameni.classList.remove('open')
+        }
+
+        //Show profile
+        TchouameniBtn.addEventListener('click',showTchouameniProfile)
+
+        //Hide profile by close mark
+        TchouameniCloseBtn.addEventListener('click',hideTchouameniProfile)
+
+        //Hide profile by overlay
+        modalTchouameni.addEventListener('click',hideTchouameniProfile)
+        modalBodyTchouameni.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Ceballos info -->
+    <script>
+        const modalBodyCeballos =document.querySelector('.js-modal-body-ceballos')
+        const modalCeballos = document.querySelector('.js-modal-ceballos')
+        const CeballosBtn = document.querySelector('.js-ceballos-modal-btn')
+        const CeballosProfile =document.querySelector('.js-ceballos-profile')
+        const CeballosCloseBtn =document.querySelector('.js-ceballos-close')
+        function showCeballosProfile() {
+            modalCeballos.classList.add('open')
+            CeballosProfile.classList.add('open')
+        }
+
+        function hideCeballosProfile(){
+            modalCeballos.classList.remove('open')
+        }
+
+        //Show profile
+        CeballosBtn.addEventListener('click',showCeballosProfile)
+
+        //Hide profile by close mark
+        CeballosCloseBtn.addEventListener('click',hideCeballosProfile)
+
+        //Hide profile by overlay
+        modalCeballos.addEventListener('click',hideCeballosProfile)
+        modalBodyCeballos.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Arda info -->
+    <script>
+        const modalBodyArda =document.querySelector('.js-modal-body-arda')
+        const modalArda = document.querySelector('.js-modal-arda')
+        const ArdaBtn = document.querySelector('.js-arda-modal-btn')
+        const ArdaProfile =document.querySelector('.js-arda-profile')
+        const ArdaCloseBtn =document.querySelector('.js-arda-close')
+        function showArdaProfile() {
+            modalArda.classList.add('open')
+            ArdaProfile.classList.add('open')
+        }
+
+        function hideArdaProfile(){
+            modalArda.classList.remove('open')
+        }
+
+        //Show profile
+        ArdaBtn.addEventListener('click',showArdaProfile)
+
+        //Hide profile by close mark
+        ArdaCloseBtn.addEventListener('click',hideArdaProfile)
+
+        //Hide profile by overlay
+        modalArda.addEventListener('click',hideArdaProfile)
+        modalBodyArda.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Vinicius info -->
+    <script>
+        const modalBodyVinicius =document.querySelector('.js-modal-body-vinicius')
+        const modalVinicius = document.querySelector('.js-modal-vinicius')
+        const ViniciusBtn = document.querySelector('.js-vinicius-modal-btn')
+        const ViniciusProfile =document.querySelector('.js-vinicius-profile')
+        const ViniciusCloseBtn =document.querySelector('.js-vinicius-close')
+        function showViniciusProfile() {
+            modalVinicius.classList.add('open')
+            ViniciusProfile.classList.add('open')
+        }
+
+        function hideViniciusProfile(){
+            modalVinicius.classList.remove('open')
+        }
+
+        //Show profile
+        ViniciusBtn.addEventListener('click',showViniciusProfile)
+
+        //Hide profile by close mark
+        ViniciusCloseBtn.addEventListener('click',hideViniciusProfile)
+
+        //Hide profile by overlay
+        modalVinicius.addEventListener('click',hideViniciusProfile)
+        modalBodyVinicius.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+    
+
+    <!-- Show/hide Rodrygo info -->
+    <script>
+        const modalBodyRodrygo =document.querySelector('.js-modal-body-rodrygo')
+        const modalRodrygo = document.querySelector('.js-modal-rodrygo')
+        const RodrygoBtn = document.querySelector('.js-rodrygo-modal-btn')
+        const RodrygoProfile =document.querySelector('.js-rodrygo-profile')
+        const RodrygoCloseBtn =document.querySelector('.js-rodrygo-close')
+        function showRodrygoProfile() {
+            modalRodrygo.classList.add('open')
+            RodrygoProfile.classList.add('open')
+        }
+
+        function hideRodrygoProfile(){
+            modalRodrygo.classList.remove('open')
+        }
+
+        //Show profile
+        RodrygoBtn.addEventListener('click',showRodrygoProfile)
+
+        //Hide profile by close mark
+        RodrygoCloseBtn.addEventListener('click',hideRodrygoProfile)
+
+        //Hide profile by overlay
+        modalRodrygo.addEventListener('click',hideRodrygoProfile)
+        modalBodyRodrygo.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Joselu info -->
+    <script>
+        const modalBodyJoselu =document.querySelector('.js-modal-body-joselu')
+        const modalJoselu = document.querySelector('.js-modal-joselu')
+        const JoseluBtn = document.querySelector('.js-joselu-modal-btn')
+        const JoseluProfile =document.querySelector('.js-joselu-profile')
+        const JoseluCloseBtn =document.querySelector('.js-joselu-close')
+        function showJoseluProfile() {
+            modalJoselu.classList.add('open')
+            JoseluProfile.classList.add('open')
+        }
+
+        function hideJoseluProfile(){
+            modalJoselu.classList.remove('open')
+        }
+
+        //Show profile
+        JoseluBtn.addEventListener('click',showJoseluProfile)
+
+        //Hide profile by close mark
+        JoseluCloseBtn.addEventListener('click',hideJoseluProfile)
+
+        //Hide profile by overlay
+        modalJoselu.addEventListener('click',hideJoseluProfile)
+        modalBodyJoselu.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+
+    <!-- Show/hide Brahim info -->
+    <script>
+        const modalBodyBrahim =document.querySelector('.js-modal-body-brahim')
+        const modalBrahim = document.querySelector('.js-modal-brahim')
+        const BrahimBtn = document.querySelector('.js-brahim-modal-btn')
+        const BrahimProfile =document.querySelector('.js-brahim-profile')
+        const BrahimCloseBtn =document.querySelector('.js-brahim-close')
+        function showBrahimProfile() {
+            modalBrahim.classList.add('open')
+            BrahimProfile.classList.add('open')
+        }
+
+        function hideBrahimProfile(){
+            modalBrahim.classList.remove('open')
+        }
+
+        //Show profile
+        BrahimBtn.addEventListener('click',showBrahimProfile)
+
+        //Hide profile by close mark
+        BrahimCloseBtn.addEventListener('click',hideBrahimProfile)
+
+        //Hide profile by overlay
+        modalBrahim.addEventListener('click',hideBrahimProfile)
+        modalBodyBrahim.addEventListener('click',function(event){
+            event.stopPropagation()
+        })
+    </script>
+</body>
+</html>
